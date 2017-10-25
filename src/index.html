@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Carousel</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/jashkenas/backbone/master/favicon.ico">
+
+  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+  <!--[if lte IE 8]>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+      <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="./main.min.css" rel="stylesheet">
+
+  <!-- GitHub ribbon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.0/gh-fork-ribbon.min.css" />
+  <!--[if lt IE 9]>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.0/gh-fork-ribbon.ie.min.css" />
+  <![endif]-->
+</head>
+<body>
+  <!-- ============= -->
+  <!-- App Container -->
+  <!-- ============= -->
+  <div id="app">
+    <header>
+      <h1>Carousel</h1>
+      <img class="pure-img" src="http://backbonejs.org/docs/images/backbone.png">
+    </header>
+    <!-- Carousel View -->
+    <div id="#carousel" class="carousel">
+      <div class="nav-prev disabled hide">
+        <i class="material-icons">chevron_left</i>
+      </div>
+      <div class="content">
+        <!-- Block View -->
+        <div class="blocks pure-g"></div>
+      </div>
+      <div class="nav-next disabled hide">
+        <i class="material-icons">chevron_right</i>
+      </div>
+    </div>
+  </div>
+
+  <a class="github-fork-ribbon" href="https://github.com/maumchaves/carousel-backbone"
+  target="_blank" title="GitHub">GitHub</a>
+
+  <!-- ========= -->
+  <!-- Templates -->
+  <!-- ========= -->
+  <script type="text/template" id="block-template">
+    <div class="pure-u-1 pure-u-sm-1-2 pure-u-lg-1-4">
+      <div class="block">
+        <h2><%- title %></h2>
+          <img class="pure-img" src="<%- url %>">
+      </div>
+    </div>
+  </script>
+
+  <!-- ======= -->
+  <!-- Scripts -->
+  <!-- ======= -->
+  <script src="./app.min.js"></script>
+</body>
+</html>
