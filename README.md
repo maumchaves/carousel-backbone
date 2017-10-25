@@ -6,8 +6,8 @@ Carousel Backbone is a personal project aimed to explore and play with technolog
 
 ## Setup
 
-- Run `npm install`
+Run `npm install`.
 
 ## Build
 
-- Run `gulp build`
+Run `gulp build` to build the project. The build artifacts will be stored in the dist/ directory.
